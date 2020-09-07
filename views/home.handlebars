@@ -1,0 +1,14 @@
+<h1>Welcome to express simple form</h1>
+<ul>
+  {{#each THeStudents}}
+  <li>{{this}}</li>
+  {{/each }}
+  {{!-- <li>Jean</li>
+  <li>Binta</li>
+  <li>Agathe</li>
+  <li>Adil</li> --}}
+</ul>
+<form action="/students/add" method="POST">
+  <input type="text" name="student" />
+  <button type="submit">Send</button>
+</form>
